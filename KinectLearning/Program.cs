@@ -3,10 +3,24 @@ using System.Globalization;
 
 namespace KinectLearning
 {
-    class Person
+    internal class Person
     {
-        private string Name;
-        int Age;
+        public string Name { get; set; }
+        private int age;
+        public int Age //encapsulation, Age sanitization, and validation. The Age property is used to control access to the private age field, ensuring that it cannot be set to a negative value.
+        {
+            get
+            {
+                return age;
+            }
+            set
+            {
+                if (value < 0)
+                { age = 0; }
+                else { age = value; }
+                ;
+            }
+        }
 
         public Person(string name, int age)
         {
@@ -16,7 +30,7 @@ namespace KinectLearning
 
         public void SayHello()
         {
-            Console.WriteLine("Hello!");
+            Console.WriteLine($"Hello! My name is {Name} and I am {Age} years old.");
         }
 
         public bool IsAdult()

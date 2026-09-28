@@ -1,0 +1,23 @@
+﻿<Window x:Class="KinectViewer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KinectViewer"
+        mc:Ignorable="d"
+        Title="Kinect Depth Viewer" Height="500" Width="700">
+    <Grid>
+        <Image x:Name="DepthImage"
+           Stretch="Uniform" />
+        <Canvas x:Name="SkeletonCanvas"
+            IsHitTestVisible="False" />
+
+        <TextBlock x:Name="TrackingText"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"
+               Margin="10"
+               Foreground="White"
+               Background="Black"
+               FontSize="18" />
+    </Grid>
+</Window>

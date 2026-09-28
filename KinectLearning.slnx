@@ -1,3 +1,4 @@
 <Solution>
   <Project Path="KinectLearning/KinectLearning.csproj" Id="f5867174-2871-4609-a7cd-bc6f9e8e6bad" />
+  <Project Path="KinectViewer/KinectViewer.csproj" Id="c3bcefc8-4b0e-4eda-b584-200cc3e868fa" />
 </Solution>
